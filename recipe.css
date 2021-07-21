@@ -1,0 +1,51 @@
+
+body{
+    background-color: white;
+}
+h1{
+    padding: 15px;
+    text-align: center;
+    background: #F0F0F0;
+    color:  #A4A400;
+    font-size: 22pt;
+    font-family: Lucida Sans Unicode, Helvetica, Arial;
+    font-weight: bold;
+    text-decoration: underline;
+    
+    }
+    
+    h2{
+        padding: 15px;
+        text-align: left;
+        background: #F0F0F0;
+        color:  #A4A400;
+        font-size: 18pt;
+        font-family: Lucida Sans Unicode, Helvetica, Arial;
+        font-weight: normal;
+        text-decoration: underline;
+        
+        }
+    
+    pre{
+        font-family: Georgia,Garamond;
+        font-size: 11pt;
+    }
+    
+    div{
+        border-bottom: 1px solid black;
+    }
+    
+    .Usercomments{
+        background: #FFFFA8;
+        font-style: italic;
+    }
+    
+    #link2{
+        text-align: right;
+        font-family: monospace;
+    }
+
+    #subdiv{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
