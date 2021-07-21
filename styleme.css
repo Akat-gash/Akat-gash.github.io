@@ -38,8 +38,20 @@ h2{
 
 
 
+
 ul li{
     list-style-type: square;
     margin-bottom: 10px;
     margin-left: 50px;
+}
+
+dt{
+    font-weight: bolder;
+    color: tomato;
+}
+
+
+dd{
+    font-weight: lighter;
+    color:teal;
 }
