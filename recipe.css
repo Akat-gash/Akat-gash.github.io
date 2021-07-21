@@ -16,8 +16,10 @@ h1{
     text-decoration: underline;
     letter-spacing: 0.25em;
 
+
     
     }
+
 
     ul.bulleted{
         list-style-image: url(http://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/pie_icon.gif); 
@@ -65,3 +67,6 @@ h1{
     #strikeid{
         text-decoration: line-through;    
     }
+
+
+
