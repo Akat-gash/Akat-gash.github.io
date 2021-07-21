@@ -36,9 +36,6 @@ h2{
     display: table;
   }
 
-
-
-
 ul li{
     list-style-type: square;
     margin-bottom: 10px;
@@ -55,3 +52,15 @@ dd{
     font-weight: lighter;
     color:teal;
 }
+
+
+/* p::first-letter {
+    float: left;
+    line-height: 10px;
+    font-size: 75px;
+    font-family: Montserrat;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-left: 3px;
+    
+  } */
