@@ -1,0 +1,75 @@
+#header{
+    background-color: lightblue;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#flexContainer{
+    display: flex;
+    background-color: darkslategray;
+    height: 35px;
+}
+#flexContainer>div{
+    color: white;
+    border-right: 1px solid black;
+    height: 50px;
+    padding: 7px;
+    overflow: hidden;
+}
+
+#div1, #div2, #div3{
+    height: 300px;
+}
+
+#div1{
+    background-color: gray;
+    padding-left: 25px; 
+}
+#div2{
+    background-color: rgb(185, 185, 185);
+    overflow: hidden;
+}
+#div3{
+    background-color: gainsboro;
+}
+
+#footer{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color:darkslategray;
+    height: 50px;
+    padding-bottom: 45px;
+    padding-top: 25px;
+}
+
+@media (max-width: 600px){
+    #div1{
+        position: relative;
+        width: 50%;
+           
+    }
+     #div3{
+        width: 50%;
+        position: relative;
+    }
+     #div2{
+         width: 106%;
+         position: absolute;
+         margin-top:300px;
+         overflow: hidden;
+         /* margin-left: 20px; */
+    
+    }
+    .col-xs-3{
+        display: inline-block;
+    }
+    #footer{
+        margin-top:300px;
+    }
+}
+
+
+
+
