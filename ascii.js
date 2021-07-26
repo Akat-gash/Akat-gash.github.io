@@ -1,4 +1,3 @@
-"use strict";
 var viewArea;
 var animationOpt;
 var sizeOpt;
@@ -22,7 +21,7 @@ function start() {
     })();
     stopButton.disabled = false;
     startButton.disabled = true;
-};
+}
 
 function stop(time) {
     stopButton.disabled = true;
@@ -66,6 +65,4 @@ window.onload = function () {
     animationOpt.onchange = getFrames;
     sizeOpt.onchange = setSize;
     turboOpt.onchange = turbo;
-    
-
-}
+};
