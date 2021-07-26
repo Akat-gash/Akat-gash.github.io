@@ -1,3 +1,4 @@
+"use strict";
 var viewArea;
 var animationOpt;
 var sizeOpt;
@@ -65,4 +66,6 @@ window.onload = function () {
     animationOpt.onchange = getFrames;
     sizeOpt.onchange = setSize;
     turboOpt.onchange = turbo;
-};
+    
+
+}
