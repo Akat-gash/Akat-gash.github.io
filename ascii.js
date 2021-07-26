@@ -1,9 +1,17 @@
 "use strict";
-var viewArea, animationOpt, sizeOpt, timer, startButton, stopButton, speed = 250, turboOpt;
+var viewArea;
+var animationOpt;
+var sizeOpt;
+var timer;
+var startButton;
+var stopButton;
+var speed = 250;
+var turboOpt;
 
 function start() {
     var frames = viewArea.value.split("=====\n");
-    var i = 0, l = frames.length;
+    var i = 0;
+    var l = frames.length;
     (function iterator() {
         viewArea.value = frames[i];
 
