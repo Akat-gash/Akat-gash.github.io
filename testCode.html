@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Running test page</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+    </script>
+
+    <script src="code.js"></script>
+    <script src="testcode.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+
+    </script>
+    <a href="https://validator.w3.org/nu/?doc=https://akat-gash.github.io/testcode.html">
+        <img src="https://manalabs.org/img/w3c-html.png" alt="htmlcheck" />
+    </a>
+
+    <a href="http://mumstudents.org/jshint/check.php?uri=https://akat-gash.github.io/testcode.js">
+        <img style="width:88px;height: 31px;border:1px solid gray" src="JSHint.png" alt="JavaScript Lint">
+    </a>
+    <a href="http://mumstudents.org/jshint/check.php?uri=https://akat-gash.github.io/code.js">
+        <img style="width:88px;height: 31px;border:1px solid gray;" src="JSHint.png" alt="JavaScript Lint">
+    </a>
+
+
+
+</body>
+
+</html>
