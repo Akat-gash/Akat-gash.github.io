@@ -134,13 +134,6 @@
                 });
             });
 
-            describe("When the given amount is greater than or equal to 0", function () {
-                it("Throws Error with Over the draft limit", function () {
-                    checkingAccount.deposit(100);
-                    assert.throws(() => { checkingAccount.withdraw(901) }, Error, "Over the draft limit");
-                });
-            });
-
             describe("When the given amount is valid", function () {
                 it("Decrease account balance by given amount", function () {
                     checkingAccount.deposit(120);
