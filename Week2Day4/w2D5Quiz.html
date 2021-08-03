@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // "use strict";
+
+        // var b = 5;
+        // var c = hello(b);
+        // var a = 1000;
+        // var d = { a: 50, b: 90 };
+        // console.log(c.apply(d));
+        // function hello(a) {
+        //     console.log(this);
+        //     a = a * 2;
+        //     console.log(bye())
+        //     function bye() {
+        //         console.log(this);
+        //         console.log(b);
+        //         // console.log(this.b);
+        //         return a;
+        //     }
+        //     var b = 100;
+        //     return bye;
+        // }
+
+        // const CAR = (function () {
+        //     var speed;
+        //     var DegreeLeft;
+        //     var DegreeRight;
+        //     var direction;
+
+        //     const gasPaddle = function () {
+        //         if (speed < 115) {
+        //             return speed + 5;
+        //         }
+        //     };
+        //     const break1 = function () {
+        //         if (speed === 0) {
+        //             return 0;
+        //         } else if (speed <= 10) {
+        //             return 0;
+        //         } else if (speed > 10) {
+        //             return speed - 10;
+        //         }
+        //     };
+        //     const turnLeft = function () {
+        //         return direction - DegreeLeft;
+
+
+        //     };
+        //     const turnRight = function () {
+        //         return direction + DegreeRight;
+
+        //     };
+        //     const status = function () {
+        //         console.log("The car is driving direction" + direction + "at" + speed + "mph");
+        //     }
+        //     return {
+        //         gasPaddleMethod: gasPaddle,
+        //         breakMMethod: break1,
+        //         turnLeftMethod: turnLeft,
+        //         turnRightMethod: turnRight,
+        //         statusMethod: status
+        //     }
+
+        // })();
+
+
+        var a =12;
+        var b = 8;
+        var z =x(b);
+        z(a, b);
+        function x(a){
+            console.log('1: ${this} ${a} ${b}');
+            var b = function (b){
+                if (a<=10){
+                    a = a*2;
+                }
+                console.log('2: ${this} ${a} ${b}')
+            };
+            console.log('3: ${this} ${a} ${b}')
+            return b.bind({a: 5, b:20});
+        }
+
+    </script>
+
+
+</body>
+
+<body>
+    
+</body </html>
