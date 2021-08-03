@@ -34,13 +34,13 @@
 
 
         describe("withdraw", function () {
-            describe("When the given amount is more than the balance", function () {
+            describe("When the given amount is less than zero", function () {
                 it("Throws Error with Withdraw amount has to be greater than zero", function () {
                     assert.throws(() => { account.withdraw(-1) }, Error, "Withdraw amount has to be greater than zero");
                 });
             });
 
-            describe("When the given amount is less than or equal to 0", function () {
+            describe("When the given amount is greater than the account balance", function () {
                 it("Throws Error with Insufficient funds", function () {
                     assert.throws(() => { account.withdraw(200) }, Error, "Insufficient funds");
                 });
