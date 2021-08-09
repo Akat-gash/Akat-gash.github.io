@@ -1,0 +1,16 @@
+<%- include('head.ejs')%>
+    <ul>
+        <% for (let i=0; i < product.length; i++) { %>
+            <li>Name: <%= product[i].name %>,"    "
+                    Price: <%= product[i].price %>
+                        Description: <%= product[i].description %>
+                            <% } %>
+            </li>
+    </ul>
+
+
+    <form action="add-to-cart" method="POST">
+        <button type="submit">Add to Cart</button>
+    </form>
+
+    <%- include('end.ejs')%>
